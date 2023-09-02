@@ -28,8 +28,18 @@ The pyinstaller documentation recommends testing the *_onefolder* version first 
 
 ## Installation
 * Download the desired one_file solution, as in [for windows](miniterm_windows10/miniterm_onefile/dist), and double-click the downloaded file *miniterm.exe*. If successful it will open a terminal window running miniterm.
-* **If not successful**, you can download the [one_folder solution](miniterm_windows10/miniterm_onefolder/dist/miniterm), keep all of the files in a folder and double-click on the *miniterm.exe*, *pyinstaller* comments that the one_folder solution might work, when the one_file solution does not.
-* **Finally if all else fails**, install python and run the file [*miniterm.py*](miniterm_windows10/miniterm.py)
+* **If not successful**, you can download the [one_folder solution](miniterm_windows10/miniterm_onefolder/dist), go into the downloaded folder and double-click on the *miniterm.exe*, *pyinstaller* comments that the one_folder solution might work, when the one_file solution does not.
+* **Finally if all else fails**, install python and run the file [*miniterm.py*](miniterm_windows10/miniterm.py). While this doesn't solve the initial problem, it helps you solve why this solution isn't working.
+
+The instructions are the same for *macOS*, simply point to the desired versions:
+* [macOS x86 onefile](miniterm_macos_x86/miniterm_onefile/dist)
+* [macOS x86 onefolder](miniterm_macos_x86/miniterm_onefolder/dist)
+* [macOS x86 miniterm.py](miniterm_macos_x86/miniterm.py)
+
+
+* [macOS arm64 onefile](miniterm_macos_arm64/miniterm_onefile/dist)
+* [macOS arm64 onefolder](miniterm_macos_arm64/miniterm_onefolder/dist)
+* [macOS arm64 miniterm.py](miniterm_macos_arm64/miniterm.py)
 
 ## Documentation
 See documentation for tools in [pySerial Documentat](https://pyserial.readthedocs.io/en/latest/). The file miniterm.py was downloaded from this [github repo](https://github.com/pyserial/)

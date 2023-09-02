@@ -27,7 +27,9 @@ The pyinstaller documentation recommends testing the *_onefolder* version first 
 * *miniterm_onefile* - folder containing the pyinstaller one file version
 
 ## Installation
-Download the desired solution folder, and double-click the file miniterm in the folder *miniterm_solution -> dist*. If successful it will open a terminal window running miniterm.
+* Download the desired one_file solution, as in [for windows](miniterm_windows10/miniterm_onefile/dist), and double-click the downloaded file *miniterm.exe*. If successful it will open a terminal window running miniterm.
+* **If not successful**, you can download the [one_folder solution](miniterm_windows10/miniterm_onefolder/dist/miniterm), keep all of the files in a folder and double-click on the *miniterm.exe*, *pyinstaller* comments that the one_folder solution might work, when the one_file solution does not.
+* **Finally if all else fails**, install python and run the file [*miniterm.py*](miniterm_windows10/miniterm.py)
 
 ## Documentation
 See documentation for tools in [pySerial Documentat](https://pyserial.readthedocs.io/en/latest/). The file miniterm.py was downloaded from this [github repo](https://github.com/pyserial/)

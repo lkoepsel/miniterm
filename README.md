@@ -5,6 +5,13 @@ This repository attempts to provide a better solution than *tio*, *PuTTY* or *Co
 
 While my favorite serial application is [**Serial**](https://www.decisivetactics.com/products/serial/) it costs money (**and is well worth it!**) and is macOS only. The former can be a problem for early in career students and those only needing limited serial connectivity. My second best solution is the utility *miniterm* from Python's pyserial library. The only issue is that it requires Python to be installed to use and this doesn't always exist.
 
+## Why Miniterm
+Why is miniterm a good solution? It allows you to easily connect and disconnect without exiting the application. From the [documentation](https://pyserial.readthedocs.io/en/latest/tools.html#miniterm):
+
+*"Ctrl+T z suspends the connection (port is opened) and reconnects when a key is pressed. This can be used to temporarily access the serial port with an other application, without exiting miniterm. If reconnecting fails it is also possible to exit (Ctrl+]) or change the port (p)."*
+
+Which means you can have two terminal windows open, one to use for `make flash` and the other is running miniterm, where you *Ctrl+T z* and a keystroke to disconnect/connect, respectively.
+
 
 ## Solutions
 The solution is to use *pyinstaller* to create self-standing versions of miniterm. In this repository, there are three versions:
@@ -42,6 +49,6 @@ The instructions are the same for *macOS*, simply point to the desired versions:
 * [macOS arm64 miniterm.py](miniterm_macos_arm64/miniterm.py)
 
 ## Documentation
-See documentation for tools in [pySerial Documentat](https://pyserial.readthedocs.io/en/latest/). The file miniterm.py was downloaded from this [github repo](https://github.com/pyserial/)
+See documentation for tools in [pySerial Documentation](https://pyserial.readthedocs.io/en/latest/). The file miniterm.py was downloaded from this [github repo](https://github.com/pyserial/)
 
 One slight change is the baud rate is set automatically to 250000 (that is 250,000 baud).
